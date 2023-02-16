@@ -28,7 +28,7 @@ const GetQrCode = ({ setShowQrCode }) => {
 
   return (
     <>
-      <div className="w-full lg:w-2/6 min-h-screen fixed bg-white z-[999999999] top-0 right-0 flex flex-col justify-center items-center ">
+      <div className="w-full lg:w-2/6 min-h-screen fixed  z-[999999999] top-0 right-0 flex flex-col justify-center items-center ">
         <div className="w-full absolute z-10 -top-[1.2px] h-full">
           <Image
             src="/img/bg-qr-code.png"
@@ -37,8 +37,6 @@ const GetQrCode = ({ setShowQrCode }) => {
             objectFit="cover"
             objectPosition="center"
             priority
-            placeholder="Loading..."
-            blurDataURL="/img/bg-qr-code.png"
           />
         </div>
         <div className="antialiased w-full relative z-20  h-full flex flex-col items-center justify-evenly ">

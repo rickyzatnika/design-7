@@ -33,6 +33,7 @@ const Header = () => {
     speed: 1200,
     autoplaySpeed: 500,
     fade: true,
+    className: "w-full h-full",
     slidesToShow: 1,
     slideToScroll: 1,
     afterChange: (current) => setActiveIndex(current),
@@ -56,7 +57,8 @@ const Header = () => {
                 src={`${img.src}`}
                 alt=""
                 width={350}
-                height={900}
+                height={1000}
+                style={{ width: "auto", height: "auto" }}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="bottom"
