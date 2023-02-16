@@ -195,37 +195,43 @@ const Profile = ({ guest }) => {
           </div>
         </div>
       </div>
-      {showModal && (
+      {guest && guest.status === "Opened" ? (
         <>
-          <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            className={`fixed overflow-hidden top-40 right-0 shadow-lg shadow-black/20 rounded-tl-xl rounded-bl-xl w-72 lg:w-80 h-auto py-8 lg:py-6 flex items-center z-50 justify-center bg-zinc-50 transition-all duration-500 ease-linear
+          {showModal && (
+            <>
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                className={`fixed overflow-hidden top-40 right-0 shadow-lg shadow-black/20 rounded-tl-xl rounded-bl-xl w-72 lg:w-80 h-auto py-8 lg:py-6 flex items-center z-50 justify-center bg-zinc-50 transition-all duration-500 ease-linear
                 ${
                   showModal
                     ? " right-0 "
                     : " -right-[100%] transition-all duration-500 ease-linear"
                 }`}
-          >
-            <div className="text-center flex flex-col gap-4">
-              <div className="py-2 antialiased leading-loose">
-                <h1 className="text-zinc-800 text-2xl pb-3">
-                  Hallo, {guest.name}
-                </h1>
-                <p className="text-sm px-3 text-zinc-700">
-                  Mohon Konfirmasi Kehadiran dan Jangan Lupa untuk
-                  Simpan/Screenshot QR-Code.
-                </p>
-              </div>
-              <button
-                className="text-zinc-300 text-sm py-3 items-center shadow-md shadow-black/30 w-fit mx-auto px-4 rounded justify-center gap-1 bg-zinc-800 hover:bg-black"
-                onClick={() => handleAttend()}
               >
-                Konfirmasi Kehadiran
-              </button>
-            </div>
-          </motion.div>
+                <div className="text-center flex flex-col gap-4">
+                  <div className="py-2 antialiased leading-loose">
+                    <h1 className="text-zinc-800 text-2xl pb-3">
+                      Hallo, {guest.name}
+                    </h1>
+                    <p className="text-sm px-3 text-zinc-700">
+                      Mohon Konfirmasi Kehadiran dan Jangan Lupa untuk
+                      Simpan/Screenshot QR-Code.
+                    </p>
+                  </div>
+                  <button
+                    className="text-zinc-300 text-sm py-3 items-center shadow-md shadow-black/30 w-fit mx-auto px-4 rounded justify-center gap-1 bg-zinc-800 hover:bg-black"
+                    onClick={() => handleAttend()}
+                  >
+                    Konfirmasi Kehadiran
+                  </button>
+                </div>
+              </motion.div>
+            </>
+          )}
         </>
+      ) : (
+        ""
       )}
       {showAttend && (
         <div className="w-full md:w-5/6 lg:w-2/6 min-h-screen bg-black/70 backdrop-blur-sm fixed z-[999999999] flex items-center justify-center px-2 top-0 right-0">

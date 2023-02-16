@@ -36,7 +36,7 @@ const Aside = () => {
           </span>
           <h1 className="text-8xl text-white font-[parisienne]">Dinda</h1>
         </div>
-        <div className="w-full min-h-screen absolute top-0 left-0 bottom-0  z-10 bg-gradient-to-l from-zinc-800/30 to-amber-200/10 mix-blend-overlay" />
+        <div className="w-full min-h-screen fixed top-0 left-0  z-10 bg-gradient-to-t from-black/90 to-transparent " />
         <Navbar />
         <div className="w-full h-full fixed top-0  -z-10">
           <Slick {...settings}>
