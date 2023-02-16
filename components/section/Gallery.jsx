@@ -88,7 +88,7 @@ const Gallery = () => {
               />
             </div>
           </Link>
-          <Link href="/img/gallery/gallery-4-crop.png">
+          <Link href="/img/gallery/gallery-4.jpg">
             <div className="overflow-hidden group">
               <Image
                 width={100}
@@ -97,7 +97,7 @@ const Gallery = () => {
                 objectFit="cover"
                 objectPosition="center"
                 className="img-responsive rounded hover:scale-110 transition-all duration-300 ease-linear"
-                src="/img/gallery/gallery-4-crop.png"
+                src="/img/gallery/gallery-4.jpg"
                 alt="Jasa Undangan Digital - https://webhouse.inkara.id"
                 priority
               />
