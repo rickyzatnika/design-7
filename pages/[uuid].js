@@ -89,7 +89,7 @@ const GetUniqueCode = ({ guest }) => {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit(formSubmit)}>
+        <form className='w-fit items-center justify-center flex flex-col' onSubmit={handleSubmit(formSubmit)}>
           <input
             type="text"
             onChange={() => handleClick("Opened")}
@@ -97,7 +97,7 @@ const GetUniqueCode = ({ guest }) => {
             checked={selectedValue === "Opened"}
             value="Opened"
             {...register("status")}
-            className="opacity-0 flex flex-col"
+            className="opacity-0 flex flex-col items-center justify-center"
 
           />
           <button onClick={() => handleClick("Opened")} type='submit' className="py-2 cursor-pointer px-5 bg-gradient-to-tr shadow-lg rounded shadow-black/20 text-zinc-200 hover:text-zinc-100 from-amber-800/80 via-yellow-600/80 to-amber-800/80 hover:from-amber-600/90 hover:via-yellow-600/90 hover:to-amber-500/90">Buka Undangan</button>
