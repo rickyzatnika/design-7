@@ -9,10 +9,10 @@ export const images = [
   },
   {
     id: 3,
-    src: "/img/image-3.png",
+    src: "/img/image-3.JPG",
   },
   {
     id: 4,
-    src: "/img/image-4.png",
+    src: "/img/image-4.JPG",
   },
 ];

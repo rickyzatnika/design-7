@@ -9,19 +9,19 @@ const Header = () => {
   const images = [
     {
       id: 1,
-      src: "/img/image-5.jpg",
+      src: "/img/image-5.JPG",
     },
     {
       id: 2,
-      src: "/img/bg-cover-2.jpg",
+      src: "/img/bg-cover-2.JPG",
     },
     {
       id: 3,
-      src: "/img/image-4.jpg",
+      src: "/img/image-4.JPG",
     },
     {
       id: 4,
-      src: "/img/recover-slide.jpg",
+      src: "/img/recover-slide.JPG",
     },
   ];
 
