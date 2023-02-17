@@ -17,7 +17,7 @@ const Header = () => {
     },
     {
       id: 3,
-      src: "/img/image-7.JPG",
+      src: "/img/image-6.JPG",
     },
     {
       id: 4,

@@ -9,7 +9,7 @@ export const images = [
   },
   {
     id: 3,
-    src: "/img/image-3.JPG",
+    src: "/img/image-5.JPG",
   },
   {
     id: 4,
