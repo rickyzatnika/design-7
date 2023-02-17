@@ -31,7 +31,7 @@ const GetQrCode = ({ setShowQrCode }) => {
       <div className="w-full lg:w-2/6 min-h-screen fixed  z-[999999999] top-0 right-0 flex flex-col justify-center items-center ">
         <div className="w-full absolute z-10 -top-[1.2px] h-full">
           <Image
-            src="/img/bg-qr-code.png"
+            src="/img/bg-qr-code.jpg"
             alt=""
             layout="fill"
             objectFit="cover"
