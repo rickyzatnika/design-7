@@ -36,7 +36,8 @@ const GetQrCode = ({ setShowQrCode }) => {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-            priority
+            placeholder="blur"
+            blurDataURL="/img/bg-qr-code.jpg"
           />
         </div>
         <div className="antialiased w-full relative z-20  h-full flex flex-col items-center justify-evenly ">
