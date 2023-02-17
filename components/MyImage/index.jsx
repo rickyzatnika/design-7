@@ -13,6 +13,6 @@ export const images = [
   },
   {
     id: 4,
-    src: "/img/image-4.JPG",
+    src: "/img/image-7.JPG",
   },
 ];
