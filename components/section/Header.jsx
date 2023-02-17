@@ -57,11 +57,11 @@ const Header = () => {
                 src={`${img.src}`}
                 alt=""
                 width={350}
-                height={1000}
+                height={800}
                 style={{ width: "auto", height: "auto" }}
                 layout="responsive"
                 objectFit="cover"
-                objectPosition="bottom"
+                objectPosition="top"
                 priority
               />
             ))}

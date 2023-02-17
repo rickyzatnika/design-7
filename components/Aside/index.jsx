@@ -51,7 +51,8 @@ const Aside = () => {
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
-                priority
+                placeholder="blur"
+                blurDataURL={img.src}
               />
             ))}
           </Slick>
