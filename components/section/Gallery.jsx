@@ -148,6 +148,36 @@ const Gallery = () => {
               />
             </div>
           </Link>
+          <Link href="/img/gallery/gallery-10.jpg">
+            <div className="overflow-hidden group">
+              <Image
+                width={100}
+                height={75}
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center"
+                className="img-responsive rounded hover:scale-110 transition-all duration-300 ease-linear"
+                src="/img/gallery/gallery-10.jpg"
+                alt="Jasa Undangan Digital - https://webhouse.inkara.id"
+                priority
+              />
+            </div>
+          </Link>
+          <Link href="/img/gallery/gallery-11.jpg">
+            <div className="overflow-hidden group">
+              <Image
+                width={100}
+                height={75}
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center"
+                className="img-responsive rounded hover:scale-110 transition-all duration-300 ease-linear"
+                src="/img/gallery/gallery-11.jpg"
+                alt="Jasa Undangan Digital - https://webhouse.inkara.id"
+                priority
+              />
+            </div>
+          </Link>
         </LightGallery>
       </div>
       <ShowProtocol />
